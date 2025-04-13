@@ -29,7 +29,8 @@ body {
 }
 
 .chef-section {
-  background-image: url("/images/dulsie.jpg");
+  /* background-image: url("/images/dulsie.jpg"); */
+  background-image: url("/images/dulsie-professional.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -59,7 +59,7 @@ export default function Home() {
         </video>
       </header>
       <section
-        className="py-[1rem] px-[1rem] md:px-0 min-h-screen flex flex-col md:flex-row"
+        className="py-[1rem] px-[1rem] md:px-0 min-h-screen flex flex-col md:flex-row items-center"
         id="about"
       >
         <div className="chef-section w-full md:w-2/4 h-[80vh] md:max-h-[90vh]"></div>
@@ -68,9 +68,21 @@ export default function Home() {
             Meet Our Celebrity Chef
           </h2>
           <p className="font-[family-name:var(--font-geist-sans)]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a unde
-            quia molestiae repellat earum dicta optio, tenetur natus placeat.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ut.
+            Duslie Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking
+            School. A pioneer in the culinary arts, she is renowned as an Edible
+            Insects Chef and serves as the host of a popular TV cooking show.
+            She also presents{" "}
+            <a
+              href="https://www.facebook.com/ztvmenu/about"
+              className="underline"
+              target="_blank"
+            >
+              The Menu
+            </a>{" "}
+            on radio and is the Founder of Dulsie Investment Pvt Ltd. Duslie
+            holds an MBA in Global Entrepreneurship from the Catholic University
+            of Zimbabwe and an additional Master of Business Administration from
+            the Catholic University of Italy.
           </p>
           <h2 className="text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--secondary)]">
             Accomplishments
@@ -157,7 +169,10 @@ export default function Home() {
         </div>
         <div className="student w-full h-[70vh]"></div>
       </section>
-      <section id="testimonials" className="my-[2rem] mx-auto overflow-hidden p-[1rem]">
+      <section
+        id="testimonials"
+        className="my-[2rem] mx-auto overflow-hidden p-[1rem]"
+      >
         <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--primary)]">
           Hear what others had to say&hellip;
         </h2>
@@ -188,15 +203,24 @@ export default function Home() {
               name: "Adama Konseiga",
             },
           ].map((item, index) => (
-            <blockquote data-timeout="8000" key={index} className="w-full md:w-2/4">
+            <blockquote
+              data-timeout="8000"
+              key={index}
+              className="w-full md:w-2/4"
+            >
               <p>{item.text}</p>
               <cite>{item.name}</cite>
             </blockquote>
           ))}
         </div>
-        <a href="https://www.google.com/search?q=dulsie+kys+cooking+school&rlz=1C1CHZO_enZW1044ZW1044&oq=dulsie+kys+cooking+school&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIKCAIQABiABBiiBDIKCAMQABiABBiiBDIKCAQQABiABBiiBDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPdIBCDg0NjZqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8#lrd=0x1931b1f34847a105:0xee61d0d757f50663,1,,,," target="_blank" className="mx-auto block max-w-[15rem] text-center bg-[var(--secondary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90">Read More Reviews</a>
+        <a
+          href="https://www.google.com/search?q=dulsie+kys+cooking+school&rlz=1C1CHZO_enZW1044ZW1044&oq=dulsie+kys+cooking+school&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIKCAIQABiABBiiBDIKCAMQABiABBiiBDIKCAQQABiABBiiBDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPdIBCDg0NjZqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8#lrd=0x1931b1f34847a105:0xee61d0d757f50663,1,,,,"
+          target="_blank"
+          className="mx-auto block max-w-[15rem] text-center bg-[var(--secondary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90"
+        >
+          Read More Reviews
+        </a>
       </section>
-      <section id="contact"></section>
     </>
   );
 }
