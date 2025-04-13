@@ -32,6 +32,12 @@ const Navbar = () => {
           Cooking School
         </Link>
         <Link
+          href="/#services"
+          className="text-[var(--primary)] hover:underline"
+        >
+          Services
+        </Link>
+        <Link
           href="/#contact"
           className="text-[var(--primary)] hover:underline"
         >

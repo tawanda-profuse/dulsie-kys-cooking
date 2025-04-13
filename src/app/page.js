@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useRef, useEffect } from "react";
 
 export default function Home() {
@@ -168,6 +169,13 @@ export default function Home() {
           </div>
         </div>
         <div className="student w-full h-[70vh]"></div>
+        <a
+          className="mx-auto block max-w-[15rem] text-center bg-[var(--primary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90 mt-[4rem]"
+          href="https://api.whatsapp.com/send?phone=263774510544&text=Hi, I'd like to register for your cooking school."
+          target="_blank"
+        >
+          Contact Us Now
+        </a>
       </section>
       <section
         id="testimonials"
@@ -219,6 +227,69 @@ export default function Home() {
           className="mx-auto block max-w-[15rem] text-center bg-[var(--secondary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90"
         >
           Read More Reviews
+        </a>
+      </section>
+      <section
+        id="services"
+        className="py-[2rem] px-[1rem] bg-[var(--secondary)]"
+      >
+        <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-6xl text-[var(--primary)]">
+          Our Services
+        </h2>
+        {[
+          {
+            name: "Birthday Cakes",
+            image: "/images/2024-02-22.jpg",
+          },
+          {
+            name: "Corporate Catering",
+            image: "/images/2024-03-05.jpg",
+          },
+          {
+            name: "Wedding Catering",
+            image: "/images/2022-06-08.jpg",
+          },
+          {
+            name: "Galas & Luncheons",
+            image: "/images/galas.jpg",
+          },
+          {
+            name: "Breakfast Meetings",
+            image: "/images/breakfast.png",
+          },
+          {
+            name: "Anniversary Catering",
+            image: "/images/2023-03-10.jpg",
+          },
+        ].map((item, index) => (
+          <div
+            className="flex flex-col md:flex-row gap-[2rem] items-center w-full my-[4rem] min-h-[50vh] md:px-[2rem]"
+            key={index}
+          >
+            <h3
+              className={`w-full md:w-2/4 font-[family-name:var(--font-aclonica)] text-3xl text-[var(--primary)] ${
+                index % 2 === 0 ? "md:order-2" : "md:order-1"
+              }`}
+            >
+              {item.name}
+            </h3>
+            <Image
+              src={item.image}
+              className={`w-full md:w-2/4 max-h-[80vh] rounded-lg object-contain ${
+                index % 2 !== 0 ? "md:order-2" : "md:order-1"
+              }`}
+              alt={item.name}
+              width={150}
+              height={150}
+            />
+          </div>
+        ))}
+        <a
+          className="mx-auto block max-w-[15rem] text-center bg-[var(--primary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90"
+          href="https://api.whatsapp.com/send?phone=263774510544&text=Hi, I'd like your catering services."
+          target="_blank"
+        >
+          Contact Us Now
         </a>
       </section>
     </>
