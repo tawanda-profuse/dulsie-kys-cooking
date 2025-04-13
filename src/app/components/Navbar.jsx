@@ -1,4 +1,6 @@
 "use client";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -19,7 +21,7 @@ const Navbar = () => {
         className={`text-foreground absolute flex flex-col md:flex-row gap-6 md:relative transition-all ${
           isOpen
             ? "left-0 flex text-center w-full p-2 top-[6.5rem] bg-white min-h-[50vh] justify-center"
-            : "-top-[200%]"
+            : "-top-[300%]"
         }`}
       >
         <Link href="/#about" className="text-[var(--primary)] hover:underline">
@@ -37,6 +39,9 @@ const Navbar = () => {
         >
           Services
         </Link>
+        <Link href="/gallery" className="text-[var(--primary)] hover:underline">
+          Gallery
+        </Link>
         <Link
           href="/#contact"
           className="text-[var(--primary)] hover:underline"
@@ -48,7 +53,10 @@ const Navbar = () => {
         className="block md:hidden cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Image src={isOpen ? "/times.svg" : "/bars.svg"} width={40} height={40} alt="Mobile navbar toggle" />
+        <FontAwesomeIcon
+          icon={isOpen ? faTimes : faBars}
+          className="text-4xl outline-none text-[var(--primary)]"
+        />
       </button>
     </nav>
   );

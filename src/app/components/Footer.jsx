@@ -109,6 +109,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
         </div>
+      <a href="https://tawanda-dev.netlify.app/" target="_blank" className="font-bold underline">Contact the Web Developer</a>
       </div>
     </footer>
   );

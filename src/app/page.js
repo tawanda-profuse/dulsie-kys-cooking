@@ -33,12 +33,14 @@ export default function Home() {
   return (
     <>
       <header className="flex flex-col md:flex-row items-start justify-center min-h-screen bg-[var(--primary)]">
-        <div className="self-center py-[2rem] order-2 md:order-1 flex flex-col items-center justify-center w-full md:w-2/4 gap-[2rem]">
+        <div className="self-center py-[2rem] order-2 md:order-1 flex flex-col items-center justify-center w-full md:w-2/4 px-[1rem] gap-[2rem]">
           <h1 className="text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--secondary)]">
-            Cooking Redefined
+            {/* Cooking Redefined */}
+            Great Tasing Food and Top-tier Service
           </h1>
-          <q className="text-2xl italic text-[var(--secondary)]">
-            Best catering in ZW
+          <q className="text-2xl text-center italic text-[var(--secondary)]">
+            {/* Best catering in ZW */}
+            Wide variety of meals to choose from, to meet the needs and preferences of all our customers.
           </q>
           <button
             className="bg-[var(--secondary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90"
