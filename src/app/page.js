@@ -82,7 +82,7 @@ export default function Home() {
             >
               The Menu
             </a>{" "}
-            on radio and is the Founder of Dulsie Investment Pvt Ltd. Duslie
+            on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie
             holds an MBA in Global Entrepreneurship from the Catholic University
             of Zimbabwe and an additional Master of Business Administration from
             the Catholic University of Italy.

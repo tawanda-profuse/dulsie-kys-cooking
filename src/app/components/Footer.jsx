@@ -11,6 +11,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -107,6 +108,13 @@ const Footer = () => {
             className="text-3xl transition-all hover:text-[var(--secondary)]"
           >
             <FaTwitter />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=263774510544&text=Hi, I'd like your catering services."
+            target="_blank"
+            className="text-3xl transition-all hover:text-[var(--secondary)]"
+          >
+            <FaWhatsapp />
           </a>
         </div>
       <a href="https://tawanda-dev.netlify.app/" target="_blank" className="font-bold underline">Contact the Web Developer</a>

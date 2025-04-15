@@ -24,27 +24,27 @@ const Navbar = () => {
             : "-top-[300%]"
         }`}
       >
-        <Link href="/#about" className="text-[var(--primary)] hover:underline">
+        <Link href="/#about" className="text-[var(--primary)] hover:underline" onClick={() => setIsOpen(false)}>
           About Us
         </Link>
         <Link
           href="/#cooking-school"
-          className="text-[var(--primary)] hover:underline"
+          className="text-[var(--primary)] hover:underline" onClick={() => setIsOpen(false)}
         >
           Cooking School
         </Link>
         <Link
           href="/#services"
-          className="text-[var(--primary)] hover:underline"
+          className="text-[var(--primary)] hover:underline" onClick={() => setIsOpen(false)}
         >
           Services
         </Link>
-        <Link href="/gallery" className="text-[var(--primary)] hover:underline">
+        <Link href="/gallery" className="text-[var(--primary)] hover:underline" onClick={() => setIsOpen(false)}>
           Gallery
         </Link>
         <Link
           href="/#contact"
-          className="text-[var(--primary)] hover:underline"
+          className="text-[var(--primary)] hover:underline" onClick={() => setIsOpen(false)}
         >
           Contact Us
         </Link>
