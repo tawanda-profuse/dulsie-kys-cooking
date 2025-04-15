@@ -40,7 +40,8 @@ export default function Home() {
           </h1>
           <q className="text-2xl text-center italic text-[var(--secondary)]">
             {/* Best catering in ZW */}
-            Wide variety of meals to choose from, to meet the needs and preferences of all our customers.
+            Wide variety of meals to choose from, to meet the needs and
+            preferences of all our customers.
           </q>
           <button
             className="bg-[var(--secondary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90"
@@ -66,7 +67,7 @@ export default function Home() {
         id="about"
       >
         <div className="chef-section w-full md:w-2/4 h-[80vh] md:max-h-[90vh]"></div>
-        <div className="my-[2rem] flex flex-col w-full md:w-2/4 justify-center gap-[2rem]">
+        <div className="mt-[1rem] flex flex-col w-full md:w-2/4 justify-center gap-[2rem]">
           <h2 className="text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--secondary)]">
             Meet The Celebrity Chef
           </h2>
@@ -87,7 +88,7 @@ export default function Home() {
             of Zimbabwe and an additional Master of Business Administration from
             the Catholic University of Italy.
           </p>
-          <h2 className="text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--secondary)]">
+          <h2 className="text-center font-[family-name:var(--font-aclonica)] text-2xl md:text-4xl text-[var(--secondary)]">
             Accomplishments
           </h2>
           <ul className="font-[family-name:var(--font-geist-sans)] list-disc pl-4">
@@ -115,7 +116,7 @@ export default function Home() {
       <section id="cooking-school" className="p-[1rem]" ref={classesRef}>
         <div className="flex flex-col md:flex-row justify-center">
           <div className="w-full md:w-2/4 flex flex-col items-center self-center">
-            <h2 className="font-[family-name:var(--font-aclonica)] text-3xl text-[var(--secondary)]">
+            <h2 className="font-[family-name:var(--font-aclonica)] text-3xl text-[var(--secondary)] text-center">
               Cooking School Programs
             </h2>
             <div className="my-[2rem] flex flex-col font-[family-name:var(--font-aclonica)] text-xl text-[var(--secondary)] gap-[1rem]">
@@ -143,16 +144,16 @@ export default function Home() {
           </div>
           <div className="w-full md:w-2/4 school-banner min-h-[90vh]"></div>
         </div>
-        <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--primary)]">
+        <h2 className="my-[2rem] md:my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--primary)]">
           Become a Trained Professional
         </h2>
-        <div className="flex flex-col md:flex-row justify-center gap-[3rem]">
-          <div className="w-full md:w-2/4 school-banner-2 min-h-[90vh]"></div>
-          <div className="w-full md:w-2/4 flex flex-col items-center self-center">
+        <div className="flex flex-col md:flex-row justify-center md:gap-[3rem]">
+          <div className="w-full md:w-2/4 school-banner-2 min-h-[50vh] md:min-h-[90vh]"></div>
+          <div className="pt-[2rem] md:pt-0 w-full md:w-2/4 flex flex-col items-center self-center">
             <h2 className="font-[family-name:var(--font-aclonica)] text-3xl text-[var(--secondary)]">
               Hotel & Catering Management
             </h2>
-            <p className="my-[2rem] flex flex-col font-[family-name:var(--font-geist-sans)] text-xl text-[var(--primary)] gap-[1rem]">
+            <p className="my-[2rem] flex flex-col font-[family-name:var(--font-geist-sans)] text-xl text-[var(--primary)] gap-[1rem] text-center text-balance">
               Dulsie-kys catering school has partnered with H.T.S College to
               bring you an internationally recognized certificate in Hotel and
               Catering attainable over a 6 month course.
@@ -170,7 +171,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="student w-full h-[70vh]"></div>
+        <div className="student w-full min-h-[40vh] md:min-h-[70vh]"></div>
         <a
           className="mx-auto block max-w-[15rem] text-center bg-[var(--primary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90 mt-[4rem]"
           href="https://api.whatsapp.com/send?phone=263774510544&text=Hi, I'd like to register for your cooking school."
@@ -186,14 +187,14 @@ export default function Home() {
         <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--primary)]">
           Hear what others had to say&hellip;
         </h2>
-        <div className="cust-quotes overflow-hidden md:max-h-[40vh]">
+        <div className="cust-quotes min-h-[70vh] md:min-h-[50vh]">
           {[
             {
               text: "She's so patient with students and makes sure you perfect your skill...Great work Dulsie and team",
               name: "Joy Gombera",
             },
             {
-              text: "Very patient with her students,l really enjoyed her classes excellent!!",
+              text: "Very patient with her students, I really enjoyed her classes excellent!!",
               name: "Regina Zhakata",
             },
             {
@@ -201,7 +202,7 @@ export default function Home() {
               name: "Dereck Mukuku",
             },
             {
-              text: "The best of the best. She makes food speak languages the languages of heaven.",
+              text: "The best of the best. She makes food speak languages, the languages of heaven.",
               name: "Tinashe Bvirindi",
             },
             {
@@ -216,10 +217,16 @@ export default function Home() {
             <blockquote
               data-timeout="8000"
               key={index}
-              className="w-full md:w-2/4"
+              className="w-full md:w-3/4 bg-[navy] rounded-md p-2"
             >
-              <p>{item.text}</p>
-              <cite>{item.name}</cite>
+              <p>
+                <span className="inline md:hidden text-white">
+                  {item.text.slice(0, 200)}
+                  {item.text.length > 200 ? "..." : ""}
+                </span>
+                <span className="hidden md:inline text-white">{item.text}</span>
+              </p>
+              <cite>~{item.name}</cite>
             </blockquote>
           ))}
         </div>
