@@ -48,7 +48,7 @@ export default function Home() {
               classesRef.current?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            Join Our Classes
+            Join My Classes
           </button>
         </div>
         <video
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="chef-section w-full md:w-2/4 h-[80vh] md:max-h-[90vh]"></div>
         <div className="my-[2rem] flex flex-col w-full md:w-2/4 justify-center gap-[2rem]">
           <h2 className="text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--secondary)]">
-            Meet Our Celebrity Chef
+            Meet The Celebrity Chef
           </h2>
           <p className="font-[family-name:var(--font-geist-sans)]">
             Duslie Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking
@@ -146,7 +146,7 @@ export default function Home() {
         <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--primary)]">
           Become a Trained Professional
         </h2>
-        <div className="flex flex-col md:flex-row justify-center gap-[1rem]">
+        <div className="flex flex-col md:flex-row justify-center gap-[3rem]">
           <div className="w-full md:w-2/4 school-banner-2 min-h-[90vh]"></div>
           <div className="w-full md:w-2/4 flex flex-col items-center self-center">
             <h2 className="font-[family-name:var(--font-aclonica)] text-3xl text-[var(--secondary)]">
@@ -176,7 +176,7 @@ export default function Home() {
           href="https://api.whatsapp.com/send?phone=263774510544&text=Hi, I'd like to register for your cooking school."
           target="_blank"
         >
-          Contact Us Now
+          Get In Touch
         </a>
       </section>
       <section
@@ -236,7 +236,7 @@ export default function Home() {
         className="py-[2rem] px-[1rem] bg-[var(--secondary)]"
       >
         <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-6xl text-[var(--primary)]">
-          Our Services
+          Services
         </h2>
         {[
           {
@@ -291,7 +291,7 @@ export default function Home() {
           href="https://api.whatsapp.com/send?phone=263774510544&text=Hi, I'd like your catering services."
           target="_blank"
         >
-          Contact Us Now
+          Get In Touch
         </a>
       </section>
     </>

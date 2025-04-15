@@ -25,7 +25,7 @@ const Footer = () => {
           />
           <div className="flex flex-col gap-2">
             <h4 className="text-2xl font-bold font-[family-name:var(--font-geist-mono)]">
-              Find Us
+              Physical Address
             </h4>
             <address className="text-[var(--secondary)]">
               130 Highgate Rd, Harare
@@ -39,7 +39,7 @@ const Footer = () => {
           />
           <div className="flex flex-col gap-2">
             <h4 className="text-2xl font-bold font-[family-name:var(--font-geist-mono)]">
-              Call Us
+              Phone Number
             </h4>
             <a
               href="tel:0774510544"
@@ -56,7 +56,7 @@ const Footer = () => {
           />
           <div className="flex flex-col gap-2">
             <h4 className="text-2xl font-bold font-[family-name:var(--font-geist-mono)]">
-              Mail Us
+              Send An Email
             </h4>
             <a
               href="tel:dulsieinvestments@gmail.com"
@@ -79,7 +79,7 @@ const Footer = () => {
           You will be talking about our food long after the meal is over.
           Serving memories, one plate at a time.
         </p>
-        <h4 className="text-2xl font-bold">Follow Us</h4>
+        <h4 className="text-2xl font-bold">Social Media Platforms</h4>
         <div className="flex gap-4 my-4">
           <a
             href="https://www.facebook.com/dulsiefadzaim"
