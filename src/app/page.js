@@ -91,14 +91,14 @@ export default function Home() {
           <h2 className="text-center font-[family-name:var(--font-aclonica)] text-2xl md:text-4xl text-[var(--secondary)]">
             Accomplishments
           </h2>
-          <ul className="font-[family-name:var(--font-geist-sans)] list-disc pl-4">
+          <ul className="font-[family-name:var(--font-geist-sans)] list-disc pl-4 text-xl font-bold">
             <li>
               <a
                 className="underline hover:no-underline hover:text-[var(--primary)]"
                 target="_blank"
                 href="https://www.zbcnews.co.zw/zim-cook-book-scoops-international-award/"
               >
-                International Cook Book Award
+                International Cook Book Award (Edible Insects: Food for the Future)
               </a>
             </li>
             <li>
