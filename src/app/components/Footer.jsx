@@ -16,7 +16,10 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full md:p-[2rem] bg-[var(--primary)] text-white" id="contact">
+    <footer
+      className="w-full md:p-[2rem] bg-[var(--primary)] text-white"
+      id="contact"
+    >
       <div className="py-[2rem] px-[0.5rem] grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 border-b border-b-white mx-auto w-[80%]">
         <div className="flex gap-4">
           <FontAwesomeIcon
@@ -79,7 +82,7 @@ const Footer = () => {
           You will be talking about our food long after the meal is over.
           Serving memories, one plate at a time.
         </p>
-        <h4 className="text-2xl font-bold">Social Media Platforms</h4>
+        <h4 className="text-2xl font-bold">Social Platforms</h4>
         <div className="flex gap-4 my-4">
           <a
             href="https://www.facebook.com/dulsiefadzaim"
@@ -117,7 +120,14 @@ const Footer = () => {
             <FaWhatsapp />
           </a>
         </div>
-      <a href="https://tawanda-dev.netlify.app/" target="_blank" className="font-bold underline">Contact the Web Developer</a>
+        <a
+          href="https://tawanda-dev.netlify.app/"
+          target="_blank"
+          className="font-bold underline"
+        >
+          Contact the Web Developer
+        </a>
+        <p className="text-center font-[family-name:var(--font-geist-sans)]">&copy;{new Date().getFullYear()}. Dulsie Investment Pvt Ltd. All Rights Reserved</p>
       </div>
     </footer>
   );

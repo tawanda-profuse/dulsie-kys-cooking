@@ -98,7 +98,8 @@ export default function Home() {
                 target="_blank"
                 href="https://www.zbcnews.co.zw/zim-cook-book-scoops-international-award/"
               >
-                International Cook Book Award (Edible Insects: Food for the Future)
+                International Cook Book Award (Edible Insects: Food for the
+                Future)
               </a>
             </li>
             <li>
@@ -249,39 +250,50 @@ export default function Home() {
           {
             name: "Birthday Cakes",
             image: "/images/2024-02-22.jpg",
+            description: ""
           },
           {
             name: "Corporate Catering",
             image: "/images/2024-03-05.jpg",
+            description: ""
           },
           {
             name: "Wedding Catering",
             image: "/images/2022-06-08.jpg",
+            description: ""
           },
           {
             name: "Galas & Luncheons",
             image: "/images/galas.jpg",
+            description: ""
           },
           {
             name: "Breakfast Meetings",
             image: "/images/breakfast.png",
+            description: ""
           },
           {
             name: "Anniversary Catering",
             image: "/images/2023-03-10.jpg",
+            description: ""
           },
         ].map((item, index) => (
           <div
             className="flex flex-col md:flex-row gap-[2rem] items-center w-full my-[4rem] min-h-[50vh] md:px-[2rem]"
             key={index}
           >
-            <h3
-              className={`w-full md:w-2/4 font-[family-name:var(--font-aclonica)] text-3xl text-[var(--primary)] ${
+            <div
+              className={`w-full md:w-2/4 flex flex-col text-[var(--primary)] ${
                 index % 2 === 0 ? "md:order-2" : "md:order-1"
               }`}
             >
-              {item.name}
-            </h3>
+              <h3
+                className={`font-[family-name:var(--font-aclonica)] text-3xl`}
+              >
+                {item.name}
+              </h3>
+              <p className="font-serif text-lg">{item.description}</p>
+            </div>
             <Image
               src={item.image}
               className={`w-full md:w-2/4 max-h-[80vh] rounded-lg object-contain ${
