@@ -24,17 +24,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-section, footer  {
+section,
+footer {
   scroll-margin-top: 6rem;
 }
 
+@keyframes swap-pics {
+  0% {
+    background-image: url("/images/dulsie.jpg");
+  }
+
+  45% {
+    background-image: url("/images/dulsie.jpg");
+  }
+
+  55% {
+    background-image: url("/images/2022-11-22.jpg");
+  }
+
+  100% {
+    background-image: url("/images/2022-11-22.jpg");
+  }
+}
+
 .chef-section {
-  /* background-image: url("/images/dulsie.jpg"); */
-  background-image: url("/images/dulsie-professional.jpg");
+  background-image: url("/images/dulsie.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  animation: swap-pics linear 10s infinite;
 }
+
 
 .school-banner {
   background-size: contain;
@@ -97,7 +117,7 @@ section, footer  {
   font-size: 24px;
   font-weight: normal;
   font-style: italic;
-  color: var(--secondary);
+  color: var(--primary);
   line-height: 30px;
   margin-bottom: 10px;
 }
@@ -113,7 +133,6 @@ section, footer  {
 .cust-quotes blockquote cite {
   text-align: center;
   font-size: 14px;
-  color: #898989;
 }
 
 .cust-quotes blockquote cite a {

@@ -79,7 +79,7 @@ const Footer = () => {
           height={100}
         />
         <p>
-          You will be talking about our food long after the meal is over.
+          You will be talking about the food long after the meal is over.
           Serving memories, one plate at a time.
         </p>
         <h4 className="text-2xl font-bold">Social Platforms</h4>

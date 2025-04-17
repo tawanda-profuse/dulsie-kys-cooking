@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef, useEffect } from "react";
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
             preferences of all our customers.
           </q>
           <button
-            className="bg-[var(--secondary)] text-white p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90"
+            className="bg-[var(--secondary)] text-[var(--primary)] p-4 rounded-2xl text-xl cursor-pointer hover:opacity-90"
             onClick={() =>
               classesRef.current?.scrollIntoView({ behavior: "smooth" })
             }
@@ -63,15 +64,15 @@ export default function Home() {
         </video>
       </header>
       <section
-        className="py-[1rem] px-[1rem] md:px-0 min-h-screen flex flex-col md:flex-row items-center"
+        className="py-[1rem] px-[1rem] min-h-screen flex flex-col md:flex-row items-center"
         id="about"
       >
         <div className="chef-section w-full md:w-2/4 h-[80vh] md:max-h-[90vh]"></div>
-        <div className="mt-[1rem] flex flex-col w-full md:w-2/4 justify-center gap-[2rem]">
+        <div className="mt-[1rem] flex flex-col w-full md:w-2/4 justify-center gap-[2rem] self-start">
           <h2 className="text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--secondary)]">
             Meet The Celebrity Chef
           </h2>
-          <p className="font-[family-name:var(--font-geist-sans)]">
+          <p className="font-[family-name:var(--font-geist-sans)] text-center md:text-justify text-balance">
             Duslie Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking
             School. A pioneer in the culinary arts, she is renowned as an Edible
             Insects Chef and serves as the host of a popular TV cooking show.
@@ -91,7 +92,7 @@ export default function Home() {
           <h2 className="text-center font-[family-name:var(--font-aclonica)] text-2xl md:text-4xl text-[var(--secondary)]">
             Accomplishments
           </h2>
-          <ul className="font-[family-name:var(--font-geist-sans)] list-disc pl-4 text-xl font-bold">
+          <ul className="font-[family-name:var(--font-geist-sans)] list-disc pl-6 md:pl-4 text-lg font-bold">
             <li>
               <a
                 className="underline hover:no-underline hover:text-[var(--primary)]"
@@ -218,16 +219,18 @@ export default function Home() {
             <blockquote
               data-timeout="8000"
               key={index}
-              className="w-full md:w-3/4 bg-[navy] rounded-md p-2"
+              className="w-full md:w-3/4 bg-[var(--secondary)] rounded-md p-2"
             >
               <p>
-                <span className="inline md:hidden text-white">
+                <span className="inline md:hidden text-black">
                   {item.text.slice(0, 200)}
                   {item.text.length > 200 ? "..." : ""}
                 </span>
-                <span className="hidden md:inline text-white">{item.text}</span>
+                <span className="hidden md:inline text-black">{item.text}</span>
               </p>
-              <cite>~{item.name}</cite>
+              <cite className="text-[var(--primary)] font-bold">
+                ~{item.name}
+              </cite>
             </blockquote>
           ))}
         </div>
@@ -240,50 +243,56 @@ export default function Home() {
         </a>
       </section>
       <section
-        id="services"
+        id="specialties"
         className="py-[2rem] px-[1rem] bg-[var(--secondary)]"
       >
-        <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-6xl text-[var(--primary)]">
-          Services
+        <h2 className="my-[1rem] text-center font-[family-name:var(--font-aclonica)] text-4xl md:text-6xl text-[var(--primary)]">
+          Specialties
         </h2>
         {[
           {
             name: "Birthday Cakes",
-            image: "/images/2024-02-22.jpg",
-            description: ""
+            image: "/images/birthday.jpg",
+            description:
+              "Celebrate your special day with custom-made birthday cakes, crafted with love and the finest ingredients. From classic favorites to creative themes, every cake is a centerpiece to remember.",
           },
           {
             name: "Corporate Catering",
             image: "/images/2024-03-05.jpg",
-            description: ""
+            description:
+              "Impress clients and reward your team with professional corporate catering services. With a variety of menu options tailored to business breakfasts, luncheons, meetings, and large-scale events.",
           },
           {
             name: "Wedding Catering",
             image: "/images/2022-06-08.jpg",
-            description: ""
+            description:
+              "Make your big day unforgettable with elegant wedding catering. From intimate gatherings to grand celebrations, delicious food served with exceptional presentation and warm hospitality.",
           },
           {
             name: "Galas & Luncheons",
             image: "/images/galas.jpg",
-            description: ""
+            description:
+              "Host a sophisticated gala or a stylish luncheon with expertly curated menus and flawless service. With a touch of class to every plate, ensuring your guests are treated to a delightful culinary experience.",
           },
           {
             name: "Breakfast Meetings",
             image: "/images/breakfast.png",
-            description: ""
+            description:
+              "Start your day right with energizing breakfast catering, perfect for early meetings and networking events. Choose from a range of wholesome and indulgent options to fuel productivity and conversation.",
           },
           {
             name: "Anniversary Catering",
             image: "/images/2023-03-10.jpg",
-            description: ""
+            description:
+              "Celebrate lasting love and cherished milestones with personalized anniversary catering. Whether it’s a romantic dinner or a family celebration, the menus and moments are to remember.",
           },
         ].map((item, index) => (
           <div
-            className="flex flex-col md:flex-row gap-[2rem] items-center w-full my-[4rem] min-h-[50vh] md:px-[2rem]"
+            className="flex flex-col md:flex-row gap-[2rem] items-center justify-between w-full my-[4rem] min-h-[50vh] md:px-[2rem]"
             key={index}
           >
             <div
-              className={`w-full md:w-2/4 flex flex-col text-[var(--primary)] ${
+              className={`w-full md:w-2/4 flex flex-col gap-[1rem] text-[var(--primary)] ${
                 index % 2 === 0 ? "md:order-2" : "md:order-1"
               }`}
             >
@@ -292,11 +301,18 @@ export default function Home() {
               >
                 {item.name}
               </h3>
-              <p className="font-serif text-lg">{item.description}</p>
+              <p className="font-serif text-xl">{item.description}</p>
+              <Link
+                href="/gallery"
+                target="_blank"
+                className="mt-[1rem] block w-full md:max-w-[10rem] text-center bg-[var(--primary)] text-white p-4 rounded-2xl text-lg cursor-pointer hover:opacity-90"
+              >
+                View Gallery
+              </Link>
             </div>
             <Image
               src={item.image}
-              className={`w-full md:w-2/4 max-h-[80vh] rounded-lg object-contain ${
+              className={`w-full md:w-2/4 md:max-w-[25rem] max-h-[80vh] rounded-lg object-contain ${
                 index % 2 !== 0 ? "md:order-2" : "md:order-1"
               }`}
               alt={item.name}

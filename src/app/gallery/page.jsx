@@ -7,6 +7,10 @@ import Image from "next/image";
 
 const GalleryPage = () => {
   useEffect(() => {
+    document.title = "Dulsie Kys Cooking Gallery";
+  }, []);
+
+  useEffect(() => {
     // Bind Fancybox to all gallery elements
     Fancybox.bind('[data-fancybox="gallery"]', {
       loop: false,
@@ -20,6 +24,7 @@ const GalleryPage = () => {
   }, []);
 
   const images = [
+    "/images/gallery/gallery-0.jpg",
     "/images/2025-03-04.jpg",
     "/images/gallery/gallery-1.jpg",
     "/images/gallery/gallery-2.jpg",
@@ -41,6 +46,36 @@ const GalleryPage = () => {
     "/images/gallery/gallery-18.jpg",
     "/images/gallery/gallery-19.jpg",
     "/images/gallery/gallery-20.jpg",
+    "/images/gallery/gallery-21.jpg",
+    "/images/gallery/gallery-22.jpg",
+    "/images/gallery/gallery-23.jpg",
+    "/images/gallery/gallery-24.jpg",
+    "/images/gallery/gallery-25.jpg",
+    "/images/gallery/gallery-26.jpg",
+    "/images/gallery/gallery-27.jpg",
+    "/images/gallery/gallery-28.jpg",
+    "/images/gallery/gallery-29.jpg",
+    "/images/gallery/gallery-30.jpg",
+    "/images/gallery/gallery-31.jpg",
+    "/images/gallery/gallery-32.jpg",
+    "/images/gallery/gallery-33.jpg",
+    "/images/gallery/gallery-34.jpg",
+    "/images/gallery/gallery-35.jpg",
+    "/images/gallery/gallery-36.jpg",
+    "/images/gallery/gallery-37.jpg",
+    "/images/gallery/gallery-38.jpg",
+    "/images/gallery/gallery-39.jpg",
+    "/images/gallery/gallery-40.jpg",
+    "/images/gallery/gallery-41.jpg",
+    "/images/gallery/gallery-42.jpg",
+    "/images/gallery/gallery-43.jpg",
+    "/images/gallery/gallery-44.jpg",
+    "/images/gallery/gallery-45.jpg",
+    "/images/gallery/gallery-46.jpg",
+    "/images/gallery/gallery-47.jpg",
+    "/images/gallery/gallery-48.jpg",
+    "/images/gallery/gallery-49.jpg",
+    "/images/gallery/gallery-50.jpg",
   ];
 
   return (

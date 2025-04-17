@@ -20,7 +20,7 @@ const Navbar = () => {
       <div
         className={`text-foreground absolute flex flex-col md:flex-row gap-10 md:relative transition-all ${
           isOpen
-            ? "left-0 flex text-center w-full p-2 top-[6.5rem] bg-white min-h-[50vh] justify-center"
+            ? "left-0 flex text-center w-full py-8 top-[6.5rem] bg-white min-h-[50vh] justify-center"
             : "-top-[300%]"
         }`}
       >
@@ -34,10 +34,10 @@ const Navbar = () => {
           Cooking School
         </Link>
         <Link
-          href="/#services"
+          href="/#specialties"
           className="text-[var(--primary)] hover:underline font-bold" onClick={() => setIsOpen(false)}
         >
-          Services
+          Specialties
         </Link>
         <Link href="/gallery" className="text-[var(--primary)] hover:underline font-bold" onClick={() => setIsOpen(false)}>
           Gallery
