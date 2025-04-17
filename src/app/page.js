@@ -109,7 +109,7 @@ export default function Home() {
                 target="_blank"
                 href="https://www.herald.co.zw/restaurants-embrace-first-ladys-traditional-foods-call/"
               >
-                ENDORSEMENT BY 1ST LADY-"Embracing Traditional Dishes"
+                Endorsement by first lady - "Embracing Traditional Dishes"
               </a>
             </li>
           </ul>
