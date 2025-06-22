@@ -121,7 +121,7 @@ const Footer = () => {
           </a>
         </div>
         <a
-          href="https://tawanda-dev.netlify.app/"
+          href="https://tawandam.co.zw"
           target="_blank"
           className="font-bold underline"
         >
