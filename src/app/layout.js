@@ -2,7 +2,6 @@ import { Aclonica, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,11 +21,14 @@ const aclonica = Aclonica({
 
 export const metadata = {
   title: "Dulsie Kys Cooking School",
-  description: "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School. A pioneer in the culinary arts, she is renowned as an Edible Insects Chef and serves as the host of a popular TV cooking show. She also presents The Menu on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie holds an MBA in Global Entrepreneurship from the Catholic University of Zimbabwe and an additional Master of Business Administration from the Catholic University of Italy.",
-  keywords: "Cooking School, Catering, Chef, Culinary Arts, Executive Chef, organic food, edible insects, African Food, Mentorship, Food, Birthday Cakes, Corporate Catering, Wedding Catering, Galas & Luncheons, Breakfast Meetings, Anniversary Catering, Catholic University of Italy, Catholic University of Zimbabwe.",
+  description:
+    "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School. A pioneer in the culinary arts, she is renowned as an Edible Insects Chef and serves as the host of a popular TV cooking show. She also presents The Menu on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie holds an MBA in Global Entrepreneurship from the Catholic University of Zimbabwe and an additional Master of Business Administration from the Catholic University of Italy.",
+  keywords:
+    "Cooking School, Catering, Chef, Culinary Arts, Executive Chef, organic food, edible insects, African Food, Mentorship, Food, Birthday Cakes, Corporate Catering, Wedding Catering, Galas & Luncheons, Breakfast Meetings, Anniversary Catering, Catholic University of Italy, Catholic University of Zimbabwe.",
   openGraph: {
     title: "Dulsie Kys Cooking School",
-    description: "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School...",
+    description:
+      "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School...",
     url: "https://www.dulsie-kys-cooking-school.co.zw/",
     siteName: "Dulsie Kys Cooking School",
     images: [
@@ -42,7 +44,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dulsie Kys Cooking",
-    description: "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School. A pioneer in the culinary arts, she is renowned as an Edible Insects Chef and serves as the host of a popular TV cooking show. She also presents The Menu on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie holds an MBA in Global Entrepreneurship from the Catholic University of Zimbabwe and an additional Master of Business Administration from the Catholic University of Italy.",
+    description:
+      "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School. A pioneer in the culinary arts, she is renowned as an Edible Insects Chef and serves as the host of a popular TV cooking show. She also presents The Menu on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie holds an MBA in Global Entrepreneurship from the Catholic University of Zimbabwe and an additional Master of Business Administration from the Catholic University of Italy.",
     site: "@kys_cakes",
     creator: "@kys_cakes",
     images: [],
@@ -52,22 +55,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Dulsie Kys Cooking School",
-              url: "https://www.dulsie-kys-cooking-school.co.zw",
-              logo: "",
-              description: "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School. A pioneer in the culinary arts, she is renowned as an Edible Insects Chef and serves as the host of a popular TV cooking show. She also presents The Menu on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie holds an MBA in Global Entrepreneurship from the Catholic University of Zimbabwe and an additional Master of Business Administration from the Catholic University of Italy.",
-              sameAs: ["https://www.facebook.com/dulsiefadzaim"],
-            }),
-          }}
-        />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${aclonica.variable} antialiased`}
       >
