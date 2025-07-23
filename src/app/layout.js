@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export const metadata = {
     creator: "@kys_cakes",
     images: [],
   },
+  "google-adsense-account": "ca-pub-5686210525462186",
 };
 
 export default function RootLayout({ children }) {
@@ -72,13 +74,6 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <meta name="google-adsense-account" content="ca-pub-5686210525462186" />
-
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5686210525462186"
-          crossOrigin="anonymous"
-        />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${aclonica.variable} antialiased`}
@@ -87,6 +82,10 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <Script
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5686210525462186"
+        crossOrigin="anonymous"
+      ></Script>
     </html>
   );
 }
