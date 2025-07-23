@@ -2,6 +2,7 @@ import { Aclonica, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,6 +56,30 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Dulsie Kys Cooking School",
+              url: "https://www.dulsie-kys-cooking-school.co.zw",
+              logo: "",
+              description:
+                "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School. A pioneer in the culinary arts, she is renowned as an Edible Insects Chef and serves as the host of a popular TV cooking show. She also presents The Menu on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie holds an MBA in Global Entrepreneurship from the Catholic University of Zimbabwe and an additional Master of Business Administration from the Catholic University of Italy.",
+              sameAs: ["https://www.facebook.com/dulsiefadzaim"],
+            }),
+          }}
+        />
+        <meta name="google-adsense-account" content="ca-pub-5686210525462186" />
+
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5686210525462186"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${aclonica.variable} antialiased`}
       >
