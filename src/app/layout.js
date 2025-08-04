@@ -2,7 +2,6 @@ import { Aclonica, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Head from "next/head";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -52,13 +51,12 @@ export const metadata = {
     creator: "@kys_cakes",
     images: [],
   },
-  "google-adsense-account": "ca-pub-5686210525462186",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -67,14 +65,13 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "Dulsie Kys Cooking School",
               url: "https://www.dulsie-kys-cooking-school.co.zw",
-              logo: "",
               description:
                 "Duslie Fadzai Mudekwa is the Executive Chef and Owner of Dulsie Kys Cooking School. A pioneer in the culinary arts, she is renowned as an Edible Insects Chef and serves as the host of a popular TV cooking show. She also presents The Menu on radio and is the Founder of Dulsie Investment Pvt Ltd. Dulsie holds an MBA in Global Entrepreneurship from the Catholic University of Zimbabwe and an additional Master of Business Administration from the Catholic University of Italy.",
               sameAs: ["https://www.facebook.com/dulsiefadzaim"],
             }),
           }}
         />
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${aclonica.variable} antialiased`}
       >
@@ -82,10 +79,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
-      <Script
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5686210525462186"
-        crossOrigin="anonymous"
-      ></Script>
     </html>
   );
 }
