@@ -14,7 +14,7 @@ const GalleryPage = () => {
     // Bind Fancybox to all gallery elements
     Fancybox.bind('[data-fancybox="gallery"]', {
       loop: false,
-      protect: true,
+      protect: true
     });
 
     return () => {
@@ -75,7 +75,7 @@ const GalleryPage = () => {
     "/images/gallery/gallery-47.jpg",
     "/images/gallery/gallery-48.jpg",
     "/images/gallery/gallery-49.jpg",
-    "/images/gallery/gallery-50.jpg",
+    "/images/gallery/gallery-50.jpg"
   ];
 
   return (
