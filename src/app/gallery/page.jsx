@@ -15,7 +15,7 @@ const GalleryPage = () => {
     // Bind Fancybox to all gallery elements
     Fancybox.bind('[data-fancybox="gallery"]', {
       loop: false,
-      protect: true,
+      protect: true
     });
 
     return () => {
