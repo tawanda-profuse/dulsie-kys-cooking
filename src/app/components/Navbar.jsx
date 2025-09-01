@@ -13,15 +13,15 @@ const Navbar = () => {
         <Image
           src="/images/logo.png"
           alt="Company logo"
-          width={150}
-          height={100}
+          width={100}
+          height={80}
         />
       </Link>
       <div
         className={`text-foreground absolute flex flex-col md:flex-row gap-10 md:relative transition-all ${
           isOpen
-            ? "left-0 flex text-center w-full py-8 top-[6.5rem] bg-white min-h-[50vh] justify-center"
-            : "-top-[300%]"
+            ? "left-0 flex text-center w-full py-8 top-[4.3rem] bg-white min-h-[50vh] justify-center"
+            : "hidden md:flex"
         }`}
       >
         <Link href="/#about" className="text-[var(--primary)] hover:underline font-bold" onClick={() => setIsOpen(false)}>
