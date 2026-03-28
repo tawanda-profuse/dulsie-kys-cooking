@@ -13,7 +13,7 @@ export default function Home() {
         <div className="self-center py-[2rem] order-2 md:order-1 flex flex-col items-center justify-center w-full md:w-2/4 px-[1rem] gap-[2rem]">
           <h1 className="text-center font-[family-name:var(--font-aclonica)] text-4xl text-[var(--secondary)]">
             {/* Cooking Redefined */}
-            Great Tasing Food and Top-tier Service
+            Great Tasting Food and Top-tier Service
           </h1>
           <q className="text-2xl text-center italic text-[var(--secondary)]">
             {/* Best catering in ZW */}
